@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f26256dcdc40b439553d0e9abad52a2c",
+    "content-hash": "94b8a65032bc5a5b6229b9401b876c98",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1065,85 +1065,6 @@
                 }
             ],
             "time": "2022-02-23T20:31:57+00:00"
-        },
-        {
-            "name": "headerx/laravel-jetstream-installers",
-            "version": "v0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/headerx/laravel-jetstream-installers.git",
-                "reference": "e769ec72b2a4567a74801fc50a599bbe86e660e8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/headerx/laravel-jetstream-installers/zipball/e769ec72b2a4567a74801fc50a599bbe86e660e8",
-                "reference": "e769ec72b2a4567a74801fc50a599bbe86e660e8",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^9.0",
-                "laravel/jetstream": "^2.6",
-                "php": "^8.0",
-                "spatie/laravel-package-tools": "^1.9.2"
-            },
-            "require-dev": {
-                "nunomaduro/collision": "^6.0",
-                "nunomaduro/larastan": "^2.0.1",
-                "orchestra/testbench": "^7.0",
-                "pestphp/pest": "^1.21",
-                "pestphp/pest-plugin-laravel": "^1.1",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-phpunit": "^1.0",
-                "phpunit/phpunit": "^9.5",
-                "spatie/laravel-ray": "^1.26"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "HeaderX\\JetstreamInstallers\\JetstreamInstallersServiceProvider"
-                    ],
-                    "aliases": {
-                        "JetstreamInstallers": "HeaderX\\JetstreamInstallers\\Facades\\JetstreamInstallers"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "HeaderX\\JetstreamInstallers\\": "src",
-                    "HeaderX\\JetstreamInstallers\\Database\\Factories\\": "database/factories"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inmanturbo",
-                    "email": "inman.turbo@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "The missing commands to install various packages into the Jetstream skeleton",
-            "homepage": "https://github.com/headerx/laravel-jetstream-installers",
-            "keywords": [
-                "headerx",
-                "laravel",
-                "laravel-jetstream-installers"
-            ],
-            "support": {
-                "issues": "https://github.com/headerx/laravel-jetstream-installers/issues",
-                "source": "https://github.com/headerx/laravel-jetstream-installers/tree/v0.1.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/headerx",
-                    "type": "github"
-                }
-            ],
-            "time": "2022-02-26T19:00:36+00:00"
         },
         {
             "name": "jaybizzle/crawler-detect",
@@ -6975,6 +6896,85 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "headerx/laravel-jetstream-installers",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/headerx/laravel-jetstream-installers.git",
+                "reference": "e769ec72b2a4567a74801fc50a599bbe86e660e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/headerx/laravel-jetstream-installers/zipball/e769ec72b2a4567a74801fc50a599bbe86e660e8",
+                "reference": "e769ec72b2a4567a74801fc50a599bbe86e660e8",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.0",
+                "laravel/jetstream": "^2.6",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.9.2"
+            },
+            "require-dev": {
+                "nunomaduro/collision": "^6.0",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^7.0",
+                "pestphp/pest": "^1.21",
+                "pestphp/pest-plugin-laravel": "^1.1",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^9.5",
+                "spatie/laravel-ray": "^1.26"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "HeaderX\\JetstreamInstallers\\JetstreamInstallersServiceProvider"
+                    ],
+                    "aliases": {
+                        "JetstreamInstallers": "HeaderX\\JetstreamInstallers\\Facades\\JetstreamInstallers"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "HeaderX\\JetstreamInstallers\\": "src",
+                    "HeaderX\\JetstreamInstallers\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inmanturbo",
+                    "email": "inman.turbo@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The missing commands to install various packages into the Jetstream skeleton",
+            "homepage": "https://github.com/headerx/laravel-jetstream-installers",
+            "keywords": [
+                "headerx",
+                "laravel",
+                "laravel-jetstream-installers"
+            ],
+            "support": {
+                "issues": "https://github.com/headerx/laravel-jetstream-installers/issues",
+                "source": "https://github.com/headerx/laravel-jetstream-installers/tree/v0.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/headerx",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-26T19:00:36+00:00"
         },
         {
             "name": "laravel/sail",
