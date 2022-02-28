@@ -7,6 +7,8 @@
     "require": {
         "php": "^8.0.2",
         "guzzlehttp/guzzle": "^7.2",
+        "headerx/laravel-adminer-plugins": "0.2",
+        "headerx/laravel-jetstream-installers": "0.1.1",
         "laravel/framework": "^9.2",
         "laravel/jetstream": "^2.6",
         "laravel/sanctum": "^2.14.1",
@@ -14,12 +16,14 @@
         "livewire/livewire": "^2.5"
     },
     "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.12",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^6.1",
         "pestphp/pest-plugin-laravel": "^1.2",
         "phpunit/phpunit": "^9.5.10",
+        "spatie/laravel-artisan-dd": "^2.3",
         "spatie/laravel-ignition": "^1.0"
     },
     "autoload": {
