@@ -5,7 +5,6 @@ namespace Tests\Feature;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
-use Laravel\Jetstream\Features;
 use Laravel\Jetstream\Http\Livewire\TeamMemberManager;
 use Laravel\Jetstream\Mail\TeamInvitation;
 use Livewire\Livewire;
@@ -15,14 +14,8 @@ class InviteTeamMemberTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_team_members_can_be_invited_to_team(): void
+    public function test_team_members_can_be_invited_to_team()
     {
-        if (! Features::sendsTeamInvitations()) {
-            $this->markTestSkipped('Team invitations not enabled.');
-
-            return;
-        }
-
         Mail::fake();
 
         $this->actingAs($user = User::factory()->withPersonalTeam()->create());
@@ -38,14 +31,8 @@ class InviteTeamMemberTest extends TestCase
         $this->assertCount(1, $user->currentTeam->fresh()->teamInvitations);
     }
 
-    public function test_team_member_invitations_can_be_cancelled(): void
+    public function test_team_member_invitations_can_be_cancelled()
     {
-        if (! Features::sendsTeamInvitations()) {
-            $this->markTestSkipped('Team invitations not enabled.');
-
-            return;
-        }
-
         Mail::fake();
 
         $this->actingAs($user = User::factory()->withPersonalTeam()->create());

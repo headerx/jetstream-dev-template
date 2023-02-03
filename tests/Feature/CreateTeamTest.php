@@ -12,7 +12,7 @@ class CreateTeamTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_teams_can_be_created(): void
+    public function test_teams_can_be_created()
     {
         $this->actingAs($user = User::factory()->withPersonalTeam()->create());
 
